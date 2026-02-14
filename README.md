@@ -61,17 +61,18 @@ The analysis was conducted in several stages:
 - Required Python libraries: `pandas`, `numpy`, `seaborn`, `matplotlib`, `scikit-learn`
 
 ### Installation
-If you don't have the libraries installed, you can install them using pip:
-```bash
-pip install pandas numpy seaborn matplotlib scikit-learn
-Steps to Run
+If you don't have the libraries installed, you can install them using pip install pandas numpy seaborn matplotlib scikit-learn
+
+
+### Steps to Run
 Clone the repository:
 git clone <repository_url>
 cd <repository_name>
-Download the dataset: Ensure skygeni_sales_data.csv is in the same directory as the notebook.
-Open the notebook: Launch Jupyter Notebook or Google Colab and open the .ipynb file.
-Run all cells: Execute all cells in the notebook sequentially. The analysis and model building steps will be performed, and outputs (plots, tables, model metrics) will be displayed.
-Summary of Findings & Model Insights
+#### Download the dataset: Ensure skygeni_sales_data.csv is in the same directory as the notebook.
+#### Open the notebook: Launch Jupyter Notebook or Google Colab and open the .ipynb file.
+#### Run all cells: Execute all cells in the notebook sequentially. The analysis and model building steps will be performed, and outputs (plots, tables, model metrics) will be displayed.
+
+## Summary of Findings & Model Insights
 The initial exploratory analysis revealed a right-skewed revenue distribution, suggesting a few high-value deals significantly impact total revenue. Win rates were found to be relatively consistent across industries, regions, products, and lead sources, hovering around 45%. India, Ecommerce, and Inbound leads showed high deal volumes and revenue contributions. There was no strong correlation between deal size and sales cycle duration.
 
 The Logistic Regression model, while interpretable, showed limited predictive power (ROC-AUC ~0.49). This suggests that the available structured data features are not strong drivers of deal win probability, implying that other, uncaptured factors are more influential in determining deal outcomes. Therefore, the model cannot reliably predict win probability based on the current feature set, and further data collection or a different modeling approach might be required for better prediction. ```
